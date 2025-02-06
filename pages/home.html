@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <button
+      class="dark_mode m-10 cursor-pointer bg-[#1E1E2E] text-[#A6E3E9] px-5 py-2.5 rounded-lg font-semibold shadow-lg transition duration-300 hover:bg-[#2A2A3A] hover:text-[#89DCEB] active:bg-[#161621] active:scale-95"
+      onclick="toggleDarkMode()"
+    >
+      Dark mode
+    </button>
+    <ul class="list flex flex-wrap justify-center my-10 gap-5"></ul>
+  </body>
+  <script src="../js/toggle.js"></script>
+  <script src="../js/home.js"></script>
+</html>

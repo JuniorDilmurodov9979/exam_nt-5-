@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="">
+      <div class="wrapper flex flex-col justify-center items-center h-screen">
+        <button
+          class="dark_mode m-5 self-end cursor-pointer bg-[#1E1E2E] text-[#A6E3E9] px-5 py-2.5 rounded-lg font-semibold shadow-lg transition duration-300 hover:bg-[#2A2A3A] hover:text-[#89DCEB] active:bg-[#161621] active:scale-95"
+          onclick="toggleDarkMode()"
+        >
+          Dark mode
+        </button>
+        <h1 class="text-center text-3xl mb-5">Login page</h1>
+        <form
+          class="form w-[400px] flex form_login justify-center items flex-col flex-wrap"
+        >
+          <label for="phone_number"> Phone number </label>
+          <input
+            class="border w-full rounded-md w-3/10 p-2 border-gray-300 mb-3"
+            type="tel"
+            id="phone_number"
+          />
+          <label for="password">Password</label>
+          <input
+            class="border w-full rounded-md w-3/10 p-2 border-gray-300 mb-3"
+            type="password"
+            id="password"
+          />
+          <button class="btn_send bg-green-500 text-white p-2 rounded-md">
+            Send
+          </button>
+        </form>
+        <div class="mt-2">
+          <p class="">
+            You dont have an account?
+            <a class="text-blue-500" href="/">Register</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/toggle.js"></script>
+  <script src="../js/login.js"></script>
+</html>

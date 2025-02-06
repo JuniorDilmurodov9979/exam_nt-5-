@@ -1,0 +1,76 @@
+.dark {
+  background-color: #1e1e2e;
+  color: #a6e3e9;
+}
+.light {
+  background-color: #a6e3e9;
+  color: #1e1e2e;
+}
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  /* background-color: red; */
+  background-image: url("../images/eyeOpen.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.eyeConfirm {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  /* background-color: red; */
+  background-image: url("../images/eyeOpen.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (max-width: 600px) {
+  .dark_mode {
+    padding: 10px;
+    font-size: 14px;
+    margin: 10px;
+  }
+  .wrapper_register {
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  .form_register {
+    max-width: 400px;
+    width: 100%;
+  }
+  .form_register input {
+    max-width: 400px;
+    width: 100%;
+  }
+  /* login */
+  .form_login {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .form_login input {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  /* singleBlog */
+  .back {
+    font-size: 14px;
+  }
+  .list_single {
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  .img_single {
+    height: 250px;
+  }
+}
