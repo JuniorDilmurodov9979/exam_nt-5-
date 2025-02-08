@@ -8,13 +8,32 @@
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
-    <button
-      class="dark_mode m-10 cursor-pointer bg-[#1E1E2E] text-[#A6E3E9] px-5 py-2.5 rounded-lg font-semibold shadow-lg transition duration-300 hover:bg-[#2A2A3A] hover:text-[#89DCEB] active:bg-[#161621] active:scale-95"
-      onclick="toggleDarkMode()"
-    >
-      Dark mode
-    </button>
-    <ul class="list flex flex-wrap justify-center my-10 gap-5"></ul>
+    <div class="container_custom">
+      <div class="menu_wrapper flex items-center">
+        <button
+          class="dark_mode btn_dark-css m-10 cursor-pointer bg-[#1E1E2E] text-[#A6E3E9] px-5 py-2.5 rounded-lg font-semibold shadow-lg transition duration-300 hover:bg-[#2A2A3A] hover:text-[#89DCEB] active:bg-[#161621] active:scale-95"
+          onclick="toggleDarkMode()"
+        >
+          Dark mode
+        </button>
+        <a
+          class="btn_add-css px-5 py-2.5 rounded-lg font-semibold shadow-lg transition duration-300 hover:bg-blue-400 hover:text-white active:bg-[#161621] active:scale-95"
+          id="modalBtn"
+          href="/pages/blog.html"
+
+        >
+          Yangi blog qo'shish
+        </a>
+        <a class="ml-auto pr-8 profile_btn-css" href="/pages/profile.html">
+          <div class="profile_btn-wrapper flex items-center gap-2">
+            <img class="profile_btn-avatar rounded-full w-15 h-15" src="" alt="" />
+            <h1 class="profile_btn-name"></h1>
+          </div>
+        </a>
+      </div>
+
+      <ul class="list flex flex-wrap justify-center my-10 gap-5"></ul>
+    </div>
   </body>
   <script src="../js/toggle.js"></script>
   <script src="../js/home.js"></script>

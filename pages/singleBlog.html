@@ -8,18 +8,44 @@
     <title>Document</title>
   </head>
   <body>
-    <a
-      class="border back text-white hover:bg-blue-500 rounded-lg p-2 inline-block m-5 bg-blue-600"
-      href="/pages/home.html"
-      >Orqaga qaytish</a
-    >
-    <button
-      class="dark_mode m-10 cursor-pointer bg-[#1E1E2E] text-[#A6E3E9] px-5 py-2.5 rounded-lg font-semibold shadow-lg transition duration-300 hover:bg-[#2A2A3A] hover:text-[#89DCEB] active:bg-[#161621] active:scale-95"
-      onclick="toggleDarkMode()"
-    >
-      Dark mode
-    </button>
-    <ul class="list list_single flex flex-wrap justify-center my-10 gap-5"></ul>
+    <div class="btn_wrapper">
+      <a
+        class="border back text-white hover:bg-blue-500 rounded-lg p-2 inline-block m-5 bg-blue-600"
+        href="/pages/home.html"
+        >Orqaga qaytish</a
+      >
+      <button
+        class="dark_mode m-10 cursor-pointer bg-[#1E1E2E] text-[#A6E3E9] px-5 py-2.5 rounded-lg font-semibold shadow-lg transition duration-300 hover:bg-[#2A2A3A] hover:text-[#89DCEB] active:bg-[#161621] active:scale-95"
+        onclick="toggleDarkMode()"
+      >
+        Dark mode
+      </button>
+    </div>
+    <div class="single_container">
+      <ul
+        class="list list_single flex flex-wrap justify-center my-10 gap-5"
+      ></ul>
+      <div class="wrapper_comments mx-auto">
+        <h2 class="text-2xl font-bold">Comments here</h2>
+        <div class="flex flex-col gap-2 mt-2">
+          <h3 class="text-lg font-bold">Add new comment</h3>
+          <textarea
+            name="comment_add"
+            id="comment_add"
+            class="w-full border border-gray-300 rounded-lg p-2"
+            placeholder="Comment here..."
+          ></textarea>
+
+          <button
+            onclick="addComment()"
+            class="bg-blue-500 text-white px-4 py-2 rounded-lg"
+          >
+            Comment
+          </button>
+        </div>
+        <ul class="list_comment flex flex-wrap justify-center my-10 gap-5"></ul>
+      </div>
+    </div>
   </body>
   <script src="../js/toggle.js"></script>
   <script src="../js/singleBlog.js"></script>

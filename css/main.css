@@ -2,9 +2,40 @@
   background-color: #1e1e2e;
   color: #a6e3e9;
 }
-.light {
-  background-color: #a6e3e9;
+.dark #modal {
+  background-color: white;
   color: #1e1e2e;
+}
+.dark .modal-content {
+  background-color: rgb(58, 58, 68);
+}
+
+/* profile */
+.dark .profile_dark {
+  background-color: transparent;
+}
+
+.dark .profile_dark-inner-text h1,
+span {
+  color: #9277b1;
+}
+.dark .profile_dark-inner-text {
+  background-color: #1e1e2e;
+}
+.light {
+  background-color: #fff;
+  color: #1e1e2e;
+}
+
+.light span {
+  color: #1e1e2e;
+}
+
+.container_custom {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 .eye {
   position: absolute;
@@ -30,6 +61,22 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+.single_container {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* profile */
+.container_profile {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* responsive */
 @media screen and (max-width: 600px) {
   .dark_mode {
     padding: 10px;
@@ -72,5 +119,25 @@
   }
   .img_single {
     height: 250px;
+  }
+  .menu_wrapper {
+    gap: 10px;
+  }
+  .btn_add-css,
+  .btn_dark-css {
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+  }
+  .profile_btn-wrapper {
+    flex-direction: row;
+  }
+  .profile_btn-name {
+    font-size: 14px;
+  }
+  .profile_btn-avatar {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
   }
 }
