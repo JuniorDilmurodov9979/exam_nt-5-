@@ -69,6 +69,7 @@ span {
 }
 
 /* profile */
+.wrapper_profile,
 .container_profile {
   max-width: 600px;
   width: 100%;
